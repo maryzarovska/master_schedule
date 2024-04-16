@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="mainVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefHeight="39.0" prefWidth="600.0">
+            <children>
+                <TextField fx:id="searchField" prefHeight="35.0" prefWidth="470.0" promptText="Search for Students">
+                    <contextMenu>
+                        <ContextMenu>
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                            </items>
+                        </ContextMenu>
+                    </contextMenu>
+                </TextField>
+                <Button fx:id="searchButton" mnemonicParsing="false" text="Search" />
+            </children>
+        </HBox>
+      <TextArea fx:id="resultTextArea" editable="false" prefHeight="200.0" prefWidth="200.0" />
+    </children>
+</VBox>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <HBox prefHeight="39.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="searchBar" onMouseClicked="#showContextMenu" prefHeight="35.0" prefWidth="470.0" promptText="Search">
+               <contextMenu>
+                  <ContextMenu fx:id="contextMenu">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openStudentsPage" text="Students" />
+                        <MenuItem mnemonicParsing="false" onAction="#openCoursesPage" text="Courses" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TextField>
+            <Button mnemonicParsing="false" text="Search" />
+         </children>
+      </HBox>
+      <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</VBox>

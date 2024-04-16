@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="293.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <FlowPane fx:id="infoFlowPane" layoutX="-1.0" layoutY="31.0" prefHeight="192.0" prefWidth="294.0">
+         <children>
+            <ImageView fx:id="profileImageView" fitHeight="62.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+               <FlowPane.margin>
+                  <Insets left="20.0" top="40.0" />
+               </FlowPane.margin>
+               <image>
+                  <Image url="" />
+               </image>
+            </ImageView>
+            <Text fx:id="otherInfoText" strokeType="OUTSIDE" strokeWidth="0.0" text="Other info">
+               <FlowPane.margin>
+                  <Insets left="10.0" top="50.0" />
+               </FlowPane.margin>
+            </Text>
+            <Text fx:id="nameText" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name and Last Name">
+               <FlowPane.margin>
+                  <Insets left="-55.0" top="10.0" />
+               </FlowPane.margin>
+            </Text>
+            <Button fx:id="editProfileButton" mnemonicParsing="false" text="Edit profile">
+               <FlowPane.margin>
+                  <Insets left="140.0" />
+               </FlowPane.margin>
+            </Button>
+            <DatePicker fx:id="datePickerProfile">
+               <FlowPane.margin>
+                  <Insets left="60.0" top="30.0" />
+               </FlowPane.margin>
+            </DatePicker>
+         </children>
+      </FlowPane>
+      <FlowPane fx:id="eventFlowPane" layoutX="-1.0" layoutY="223.0" prefHeight="316.0" prefWidth="294.0">
+         <children>
+            <Button fx:id="addEventButton" mnemonicParsing="false" text="Add event">
+               <FlowPane.margin>
+                  <Insets left="110.0" />
+               </FlowPane.margin>
+            </Button>
+            <TextArea fx:id="eventTextArea" prefHeight="290.0" prefWidth="292.0" />
+         </children>
+      </FlowPane>
+      <FlowPane fx:id="profileTitleFlowPane" layoutX="1.0" layoutY="-3.0" prefHeight="34.0" prefWidth="292.0">
+         <children>
+            <Text fx:id="profileTitleText" strokeType="OUTSIDE" strokeWidth="0.0" text="My Profile">
+               <FlowPane.margin>
+                  <Insets left="115.0" top="10.0" />
+               </FlowPane.margin>
+            </Text>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>
+
